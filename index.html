@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETRAK CTREK LAMPU SESI 4</title>
+</head>
+
+<body>
+    <img src="assets/images/off.jpeg" alt="" id="lampu1" />
+    <h1>CETREKAN LAMPU ON OFF</h1>
+    <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+    <button onclick="saklar('off')">MATIKAN LAMPU</button>
+
+    <!-- INI ADALAH SCRIPT JS KITA-->
+    <script>
+        function saklar(params) {
+            let lampu1 = document.getElementById("lampu1");
+
+            if (params == "on") {
+                lampu1.src = "assets/images/on.jpeg";
+            }
+            if (params == "off") {
+                lampu1.src = "assets/images/off.jpeg";
+            }
+
+            return lampu1;
+
+        }
+    </script>
+</body>
+
+</html>
